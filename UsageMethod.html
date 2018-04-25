@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+<body>
+<div>
+    <div class="menu">
+        <ul class="menu_ul">
+            <li><a class="active" href="../index.html">首页</a></li>
+
+            <div class="dropdown">
+                <a href="#" class="dropbtn">弹性力学可视化计算系统</a>
+                <div class="dropdown-content">
+                    <a href="beam1.html">悬臂梁受集中力分析</a>
+                    <a href="waterWall2.html">挡水墙问题</a>
+                    <a href="barrelForce3.html">圆筒受均布力</a>
+                    <a href="tunnelForce4.html">压力隧洞</a>
+                    <a href="beam5.html">梁受均布荷载</a>
+                    <a href="smallHole6.html">小孔口问题</a>
+                    <a href="planeForce7.html">平面应力与平面应变</a>
+                    <a href="boundaryCondition8.html">边界条件</a>
+                    <a href="wedge9.html">楔形体受重力和液体压力</a>
+                    <a href="halfPlane10.html">半平面体在边界上受竖向集中力</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="../plot3D/3dPlot.html" class="dropbtn">3D绘图</a>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">帮助</a>
+                <div class="dropdown-content">
+                    <a href="UsageMethod.html">关于</a>
+                </div>
+            </div>
+
+        </ul>
+    </div>
+</div>
+
+<div id="article">
+    <div class="article_div" style="display: flex;  flex-direction: column; justify-content: center;align-items: center;">
+        <p class="article_content">
+        <div>
+        <h2 style="font-size: large">平面应力问题</h2>
+        只有平面应力分量( $ε_x$ $ε_y$ $τ_{xy}$ )存在,且仅为$x$ $y$的函数的弹性力学问题.<br>
+        这类问题的条件是:弹性体为等厚度的薄板(沿$z$向是等厚度$δ$)，体力 面力和约束都只有$x$ $y$ 平面内的量($f_x$ $f_y$ $\overline{f_x}$ $\overline{f_y}$ $\overline{u}$ $\overline{v}$)
+        且都不沿$z$向变化,并且面力和约束只作用于板边，在板面($z$ = $\pm$ $\frac δ2$)上没有任何面力和约束的作用。
+        <br>
+        <h2 style="font-size: large">平面应变问题</h2>
+        只有平面应变分量( $ε_x$ $ε_y$ $γ_{xy}$ )存在，且仅为$x$ $y$的函数的弹性力学问题。
+        这类问题的条件是:弹性体为常截面的很长柱体。体力,面力和约束条件与平面应力问题相似，只有$x$ $y$平面内的体力$f_x$ $f_y$ 面力$\overline{f_x}$ $\overline{f_y}$
+        和约束$\overline{u}$ $\overline{v}$的作用，且都不沿$z$向变化。
+
+
+        <h2 style="font-size: large">平面问题基本方程总结</h2><br>
+        平衡方程:  $$  \frac{\partial σ_x}{\partial x} + \frac{\partial {τ_{xy}}}{\partial x} + f_x = 0$$
+        $$  \frac{\partial σ_y}{\partial y} + \frac{\partial {τ_{xy}}}{\partial x} + f_y = 0$$
+        几何方程：$$ ε_x = \frac{\partial u}{\partial x} \quad ε_y = \frac{\partial v}{\partial y}  \quad γ_{xy} = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} $$
+        物理方程：(平面应力问题)
+        $$ ε_x = \frac 1E (σ_x - μσ_y)  \quad ε_y = \frac {1}{E} (σ_y - μσ_x) \quad  γ_{xy} = \frac {2(1+μ)}{E} τ_{xy}   $$
+        物理方程：(平面应变问题)
+        $$ ε_x = \frac {1-μ^2}{E} (σ_x -  \frac {μ}{1-μ}σ_y)  \quad ε_y = \frac {1-μ^2}{E} (σ_y - \frac {μ}{1-μ} σ_x) \quad  γ_{xy} = \frac {2(1+μ)}{E} τ_{xy}   $$
+        由平面应力到平面应变
+        $$ E \to \frac {E}{1-μ^2} \quad μ \to \frac{μ}{1-μ} $$
+
+        </div>
+        </p>
+        <div> <img src="1.jpg" style="height:100%"> </div>
+        <div> <img src="2.jpg" style="height:100%"> </div>
+
+    </div>
+</div>
+
+</body>
+</html>

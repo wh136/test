@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+<body>
+<div class="menu">
+    <ul class="menu_ul">
+        <li><a class="active" href="../index.html">首页</a></li>
+
+        <div class="dropdown">
+            <a href="#" class="dropbtn">弹性力学可视化计算系统</a>
+            <div class="dropdown-content">
+                <a href="beam1.html">悬臂梁受集中力分析</a>
+                <a href="waterWall2.html">挡水墙问题</a>
+                <a href="barrelForce3.html">圆筒受均布力</a>
+                <a href="tunnelForce4.html">压力隧洞</a>
+                <a href="beam5.html">梁受均布荷载</a>
+                <a href="smallHole6.html">小孔口问题</a>
+                <a href="planeForce7.html">平面应力与平面应变</a>
+                <a href="boundaryCondition8.html">边界条件</a>
+                <a href="wedge9.html">楔形体受重力和液体压力</a>
+                <a href="halfPlane10.html">半平面体在边界上受竖向集中力</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="../plot3D/3dPlot.html" class="dropbtn">3D绘图</a>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">帮助</a>
+            <div class="dropdown-content">
+                <a href="UsageMethod.html">关于</a>
+            </div>
+        </div>
+
+    </ul>
+</div>
+</div>
+
+<div id="article">
+    <div class="article_div" style="display: flex;  flex-direction: column; justify-content: center;align-items: center;">
+        <div style="width: 100%">
+        <h2 style="font-size: large">边界条件</h2>
+        边界条件表示在边界上的位移和约束，或是应力与面力之间的关系式。
+        <br>
+        <h2 style="font-size: large">应力边界条件</h2>
+        在$S_σ$部分边界上任意点的应力与边界面上的面力之间的关系式。<br>
+        <h2 style="font-size: medium ">应力边界条件的两种表达式</h2>
+
+        1.在边界点取出一个微分体，考虑其平衡条件，便可得出应力边界条件表达式。<br>
+        2.在同一边界面上，应力分量应等于对应的面力分量(数值相同 方向一致)由于面力的数值和方向是给定的。
+        因此,在同一边界面上，应力的数值应等于面力的数值，而面力的方向就是应力的方向，应注意面力和应力正负号不同。<br>
+        <h2 style="font-size: medium ">斜面</h2>
+        边界面为斜面的情形，根据微单元体的平衡条件可得，应力(面力)边界条件就是:
+        $$ \left. \begin{array}{l} (lσ_x + mτ_{xy})_s = \overline{f_x} (s) \\ (mσ_y + lτ_{xy})_s = \overline{f_y} (s)\end{array}  \right\} (在S_σ上) $$
+        </div>
+
+        <div> <img src="2.2.jpg" style="height:100%"> </div>
+
+        <div style="width: 100%">
+            <h2 style="font-size: large">坐标面</h2>
+            边界面为坐标面的情形。<br>
+            若$x = a $为正$x$面，$(σ_x)_{x=a} = \overline{f_x}$ $\quad$  $(τ_{xy})_{x=a} = \overline{f_y}$ <br>
+            若$x = b $为负$x$面，$(σ_x)_{x=b} = - \overline {f_x}$ $\quad$ $(τ_{xy})_{x=b} = - \overline {f_y}$
+
+        </div>
+        <div>
+            <img src="2.3.jpg" style="height:100%">
+            <img src="2.4.jpg" style="height:100%">
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>

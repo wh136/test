@@ -1,0 +1,126 @@
+.form {
+    margin: 20px 15px 0;
+    padding: 0 0 20px
+}
+
+.container {
+    /*margin: 17px auto 15px auto;*/
+    width: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /*position: relative;*/
+    opacity: .93;
+    filter: Alpha(Opacity=93);
+    border-radius: 3px
+}
+
+.form>.form_ul {
+    list-style-type: none;
+    list-style-image: none
+}
+
+.form_ul {
+    padding: 0 0 10px 0;
+    position: relative;
+    zoom: 1
+}
+
+.form_ul li {
+    padding: 6px;
+    position: relative;
+    zoom: 1;
+    clear: both;
+    width: 98%;
+    vertical-align: middle;
+    margin-bottom: 2px
+}
+
+
+.content {
+    overflow: hidden
+}
+
+.desc {
+    padding: 3px 0;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin: 0
+}
+
+.input {
+    font-family: "Verdana", "微软雅黑", "宋体", "Lucida Grande";
+    height: auto;
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 3px
+}
+
+.input:focus {
+    border: 1px solid #649efd
+}
+
+
+
+
+/* menu layout css begin */
+.menu_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2B2B2B;
+}
+
+.menu_ul>li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover {
+    background-color: #564961;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2B2B2B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index:900;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #564961
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* menu layout css end  */
+
+
+
+.text{
+
+}
